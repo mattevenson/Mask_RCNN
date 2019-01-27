@@ -18,7 +18,6 @@ import keras.backend as K
 import keras.layers as KL
 import keras.models as KM
 
-
 class ParallelModel(KM.Model):
     """Subclasses the standard Keras Model and adds multi-GPU support.
     It works by creating a copy of the model on each GPU. Then it slices
